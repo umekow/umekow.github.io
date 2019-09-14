@@ -1,0 +1,23 @@
+contact:
+	email:umekolw@gmail.com
+	twitter: https://twitter.com/Umekolwalker
+	instagram: https://www.instagram.com/umekowalker
+	linkedin:https://www.linkedin.com/in/umeko-walker-37936b190/
+	resume:http://umekowalker.me/Resume/
+
+About me:
+
+Umeko Walker is a web and android developer. She started coding by teaching herself Java and android development. During the first year of debugging, she found two new passions: learning and problem solving. A career in software development allows Umeko to build and utilize these skills to create wonderful software. Umeko is now a student at Lambda School. Java and JavaScript are her favorite languages even though she considers herself a jack-of-all-trades. Her goal is to get a job in the field and to continue to work on personal projects. No matter how much Umeko grows she will always have a beginners mind. Umeko's favorite project is the Empathy Builder. A calculator that helps people to understand how challenging it is for victims of domestic violence to relocate. You can check it out, here.
+
+Skills:
+
+HTML
+CSS
+JavaScript
+Java
+Python
+Android
+
+Education:
+Mississippi College Biology 2011-2013
+Lambda School FullStack Web Development 2019-2020
