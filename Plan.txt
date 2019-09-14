@@ -1,0 +1,44 @@
+what makes an editor look like an editor?
+font: 
+	*each letter is thin
+	*the letter spacing is small
+blinking cursor
+solid background
+same toolbar: file, edit, title of document
+
+
+
+
+What makes vs code look like vs code?
+text is colored based on category to label its context or meaning:
+	#2E75D0: Label/type
+	#8AC1DE: attribute
+	#BB7643: attribute value
+	#777673: regular text
+	#499B54: comments
+	
+Tags are the opposite of the background
+Each line is numbered
+Tabs
+Side Explorer: each active label is highlighted
+
+
+
+Site needs to have
+
+Matching font
+Blinking cursor somewhere on the page
+A dark solid background
+A navigation that looks like the toolbar and/or a sidebar
+White to light gray tags (if used)
+Different colors based on category:
+	Header: #2E75D0
+	subHeaders: #8AC1DE
+	subHeaders value: #BB7643
+	paragraphs: #777673
+
+
+
+
+
+
