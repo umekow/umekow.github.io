@@ -129,8 +129,36 @@ table {
 .navigation {
   display: flex;
 }
-.bold {
-  font-size: 35px;
+.header {
+  background: #453A57;
+  height: 100vh;
+}
+.header .name {
+  margin: auto;
+  width: 50%;
+}
+.header .about {
+  margin: 0 10%;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+.header svg {
+  text-align: center;
+  margin-top: 25%;
+}
+.header .more {
+  background: none;
+  border: 1px solid white;
+  margin: 10% auto;
+  padding: 5px 40px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+.header .more:hover {
+  background: white;
+  border: 1px solid #453A57;
+  color: #453A57;
 }
 @font-face {
   font-family: 'Consolas';
