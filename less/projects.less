@@ -4,6 +4,10 @@
 
     a {
         color: @dark-purple; 
+
+        &:hover{
+            color: @main-color; 
+        }
         
     }
     h3{
@@ -21,8 +25,20 @@
         .project{
             max-width: 45%; 
             padding: 2.5%; 
+
+            .title-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 60%;
+                margin: auto;
+
+                a{
+                    padding: 0 3%; 
+                }
+            }
             h5{
-                font-size: 2rem; 
+                font-size: 1.7rem; 
                 text-align: center;
             }
 
@@ -41,6 +57,7 @@
 
                 i{
                     padding: 1%; 
+                    color: @main-color; 
                 }
             }
         }

@@ -67,13 +67,19 @@ function createNewProject(project){
     const project_container = document.createElement('div'); 
     project_container.classList.add('project')
 
+    const title_container = document.createElement('div'); 
+    title_container.classList.add('title-container')
     //creates a title with link 
     const title_link = document.createElement('a');
     title_link.href = project.link;  
     const title = document.createElement('h5'); 
     title.textContent = project.title; 
     title_link.appendChild(title); 
-    project_container.appendChild(title_link); 
+    title_container.appendChild(title_link); 
+
+    title_container.insertAdjacentHTML('beforeend', `<a href=${project.github}><i class="fab fa-github-square fa-2x"></i></a>`)
+
+    project_container.appendChild(title_container)
 
     //creates a new image for each project 
     const img = document.createElement('img'); 
@@ -88,7 +94,7 @@ function createNewProject(project){
     stack_container.classList.add('stack'); 
     project_container.appendChild(stack_container); 
 
-    project.stack.forEach(skill => stack_container.insertAdjacentHTML('beforeend', `<i class="${skills_list[skill]} fa-3x"></i>`)); 
+    project.stack.forEach(skill => stack_container.insertAdjacentHTML('beforeend', `<i  class="${skills_list[skill]} fa-3x"></i>`)); 
 
     //project summary 
     const summary = document.createElement('p'); 
@@ -104,6 +110,7 @@ function createNewProject(project){
         bullet_points.appendChild(point); 
     }); 
     project_container.appendChild(bullet_points); 
+
 
 
 
