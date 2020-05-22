@@ -177,10 +177,16 @@ table {
 .header {
   background: #9392c7;
   height: 100vh;
+  position: relative;
 }
 .header .name {
   margin: auto;
   max-width: 50%;
+}
+.header .name-container {
+  margin: auto;
+  position: relative;
+  top: 5%;
 }
 .header .about-container {
   display: flex;
@@ -199,6 +205,7 @@ table {
   margin: 0 10%;
   color: white;
   font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
 }
 .header .about .social {
   margin: 2% 0 0 0;
@@ -227,10 +234,10 @@ table {
 #skills h3 {
   color: #453A57;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 #skills .skills-container {
-  max-width: 90%;
+  max-width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -239,7 +246,7 @@ table {
 #skills .skills-container .skill {
   background: #453A57;
   color: #FAFAFF;
-  min-width: 15%;
+  min-width: 10%;
   text-align: center;
   padding: 1%;
   margin: 3%;
@@ -248,12 +255,15 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #453A57;
 }
 #skills .skills-container .skill:hover {
   background: #FAFAFF;
-  border: 1px solid #453A57;
   color: #453A57;
 }
 body {
   font-size: 62.5%;
+}
+body section {
+  padding: 2.5% 0;
 }
