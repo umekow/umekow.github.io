@@ -1,4 +1,4 @@
-const skills_div = document.querySelector('#skills'); 
+const skills_div = document.querySelector('.skills-container'); 
 
 const skills_list = ['Html', 'CSS', 'JavaScript', 'Python', 'Java', 'React', 'Node.js', 'Express', 'REST', 'Redux', 'LESS', 'SASS', 'Knex', 'SQL', 'Ant.Design', 'Android', 'Postgres' ]
 
