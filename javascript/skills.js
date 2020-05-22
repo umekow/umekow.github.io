@@ -46,4 +46,4 @@ for (const skill in skills_list){
 
 
 
-export default skills_list; 
+export {skills_list}; 

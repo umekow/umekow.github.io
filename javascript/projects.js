@@ -1,4 +1,26 @@
-import skills from './skills.js'; 
+
+
+const skills_list = {
+    'Html':'fab fa-html5', 
+    'CSS':'fab fa-css3-alt', 
+    'JavaScript':'fab fa-js-square', 
+    'Python':'fab fa-python', 
+    'Java':'fab fa-java', 
+    'React':'fab fa-react', 
+    'Node.js':'fab fa-node-js', 
+    //'Express':'fab', 
+    //'REST':'fab', 
+    //'Redux':'fab', 
+    //'LESS':'fab', 
+    'SASS':'fab fa-sass', 
+    'Knex':'fas fa-database', 
+    'SQL':'fas fa-database', 
+    //'Ant.Design':'fab', 
+    'Android':'fab fa-android', 
+    'Postgres':'fas fa-database', 
+}
+
+
 const projects_section = document.querySelector('.projects-container'); 
 
 
@@ -43,6 +65,7 @@ const project_list = [
 
 function createNewProject(project){
     const project_container = document.createElement('div'); 
+    project_container.classList.add('project')
 
     //creates a title with link 
     const title_link = document.createElement('a');
@@ -54,6 +77,7 @@ function createNewProject(project){
 
     //creates a new image for each project 
     const img = document.createElement('img'); 
+    img.classList.add('project-photo'); 
     img.src = project.img; 
     img.alt = project.title; 
     project_container.appendChild(img); 
@@ -63,7 +87,7 @@ function createNewProject(project){
     const stack_container = document.createElement('div'); 
     project_container.appendChild(stack_container); 
 
-    project.stack.forEach(skill => project_container.insertAdjacentHTML('beforeend', `<i class="${skills[skill]} fa-2x"></i>`)); 
+    project.stack.forEach(skill => project_container.insertAdjacentHTML('beforeend', `<i class="${skills_list[skill]} fa-3x"></i>`)); 
 
     //project summary 
     const summary = document.createElement('p'); 

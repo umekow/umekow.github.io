@@ -273,6 +273,9 @@ table {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+#projects .projects-container .project {
+  max-width: 45%;
+}
 .h3-style {
   color: #453A57;
   text-align: center;
