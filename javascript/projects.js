@@ -11,7 +11,7 @@ responsiblities: 2 - 3 bullet points '
 const project_list = [
     {
         'title': 'Citrics.io', 
-        'img': '../images/citrics/dashboard_monitor.png', 
+        'img': '../images/projects/citrics/dashboard_monitor.png', 
         'github': 'https://github.com/umekow/city-data-comparison-fe', 
         'stack': 'HTML, CSS, JavaScript, React, Nodejs', 
         'link': 'https://v1.citrics.io', 
@@ -21,7 +21,7 @@ const project_list = [
 
     {
         'title': 'Bountiful ', 
-        'img': '../images/bountiful/campaigns_monitor.png', 
+        'img': '../images/projects/bountiful/campaigns_monitor.png', 
         'github': 'https://github.com/bw-donor-mgmt/back-end/', 
         'stack': 'HTML, CSS, JavaScript, React', 
         'link': 'https://front-end-mlqg5zp0w.now.sh/', 
@@ -31,7 +31,7 @@ const project_list = [
 
     {
         'title': 'Empathy Builder', 
-        'img': '../images/eb/landing_monitor.png', 
+        'img': '../images/projects/eb/landing_monitor.png', 
         'github': 'https://github.com/DV-Empathy-Builder/landing-page-merge-fix', 
         'stack': 'HTML, CSS, JavaScript', 
         'link': 'https://dv-empathy-builder.github.io/landing-page-merge-fix/', 
@@ -44,17 +44,19 @@ const project_list = [
 function createNewProject(project){
     const project_container = document.createElement('div'); 
 
+    //creates a title with link 
     const title_link = document.createElement('a');
     title_link.href = project.link;  
     const title = document.createElement('h5'); 
     title.textContent = project.title; 
     title_link.appendChild(title); 
-
     project_container.appendChild(title_link); 
 
-    // const img = document.createElement('img'); 
-    // img.src = project.img
-    // img.alt = project.title
+    //creates a new image for each project 
+    const img = document.createElement('img'); 
+    img.src = project.img
+    img.alt = project.title
+    project_container.appendChild(img)
 
     // const list = document.createElement('ul'); 
     // projects.bullets.forEach(project =>{ 
