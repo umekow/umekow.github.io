@@ -54,9 +54,13 @@ function createNewProject(project){
 
     //creates a new image for each project 
     const img = document.createElement('img'); 
-    img.src = project.img
-    img.alt = project.title
-    project_container.appendChild(img)
+    img.src = project.img; 
+    img.alt = project.title; 
+    project_container.appendChild(img); 
+
+    const summary = document.createElement('p'); 
+    summary.textContent = project.summary; 
+    project_container.appendChild(summary); 
 
     // const list = document.createElement('ul'); 
     // projects.bullets.forEach(project =>{ 
