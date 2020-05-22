@@ -126,30 +126,94 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.navigation {
+#navigation-container {
+  border-bottom: 1px solid #9392c7;
+}
+#navigation {
   display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
+#navigation .name-navigation {
+  font-size: 1.6rem;
+  padding: 1% 0;
+  color: #9392c7;
+  font-family: 'Pacifico', cursive;
+}
+#navigation nav {
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-evenly;
+  max-width: 75%;
+  text-align: center;
+  align-items: centerA;
+}
+#navigation nav .link {
+  padding: 0 10%;
+  color: #FAFAFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+}
+#navigation nav .link:hover {
+  background: #9392c7;
+  color: #FAFAFF;
+}
+#navigation nav .link:hover a {
+  color: #FAFAFF;
+}
+#navigation nav a {
+  color: #9392c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navigation nav a:hover {
+  color: #FAFAFF;
 }
 .header {
-  background: #453A57;
+  background: #9392c7;
   height: 100vh;
 }
 .header .name {
   margin: auto;
-  width: 50%;
+  max-width: 50%;
+}
+.header .about-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  max-width: 80%;
+}
+.header .about-container img {
+  height: auto;
+  border: 2px solid #FAFAFF;
+  max-width: 100%;
+  border-radius: 10px;
 }
 .header .about {
   margin: 0 10%;
   color: white;
   font-family: 'Roboto Mono', monospace;
 }
+.header .about .social {
+  margin: 2% 0 0 0;
+}
+.header .about .social a {
+  color: white;
+}
 .header svg {
   text-align: center;
-  margin-top: 25%;
+  margin-top: 17%;
 }
 .header .more {
   background: none;
   border: 1px solid white;
-  margin: 10% auto;
+  margin: 2% auto;
   padding: 5px 40px;
   border-radius: 5px;
   color: white;
@@ -157,8 +221,8 @@ table {
 }
 .header .more:hover {
   background: white;
-  border: 1px solid #453A57;
-  color: #453A57;
+  border: 1px solid #9392c7;
+  color: #9392c7;
 }
 @font-face {
   font-family: 'Consolas';

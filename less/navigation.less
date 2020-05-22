@@ -1,6 +1,68 @@
-.navigation{
-    display: flex;  
+
+#navigation-container{
+    border-bottom: 1px solid @main-color; 
     
+}
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    
+    margin: auto;
+    
+    
+    .name-navigation{
+        font-size: 1.6rem; 
+        padding: 1% 0; 
+        color: @main-color; 
+        font-family: 'Pacifico', cursive;
+    }
+    
+    nav{
+        display:flex; 
+        font-size: 1.1rem; 
+        justify-content: space-evenly;
+        max-width: 75%;
+        text-align: center;
+        align-items: centerA;
+
+        .link{
+
+            padding: 0 10%; 
+            color: @off-white; 
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width:30%;
+
+
+            &:hover{
+                background: @main-color;
+                color: @off-white; 
+
+                a{
+                    color:@off-white;
+                }
+            }
+        }
+        
+        a{
+            
+            color: @main-color; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+            
+            &:hover{
+                color: @off-white; 
+            }
+            
+        }
+    }
 }
 
 
