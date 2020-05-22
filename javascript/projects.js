@@ -62,16 +62,13 @@ function createNewProject(project){
     summary.textContent = project.summary; 
     project_container.appendChild(summary); 
 
-    // const list = document.createElement('ul'); 
-    // projects.bullets.forEach(project =>{ 
-    //     //each project will only have 2 bullets
-    //     const bullet1 = document.createElement('li'); 
-    //     const bullet2 = document.createElement('li'); 
-        
-    //     // bullet1.textContent(project.bullets[1])
-    //     // bullet2.textContent(project.bullets[2])
-
-    // })
+    const bullet_points = document.createElement('ul'); 
+    project.bullets.forEach(bullet =>{ 
+        const point = document.createElement('li'); 
+        point.textContent = bullet;  
+        bullet_points.appendChild(point); 
+    }); 
+    project_container.appendChild(bullet_points); 
 
 
 

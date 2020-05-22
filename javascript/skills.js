@@ -41,3 +41,6 @@ function createSkill(skill){
 
 
 skills_list.forEach(skill => skills_div.appendChild(createSkill(skill)))
+
+
+export default skills_list; 
