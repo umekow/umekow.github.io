@@ -182,6 +182,19 @@ table {
   margin: auto;
   max-width: 50%;
 }
+.header .about-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  max-width: 80%;
+}
+.header .about-container img {
+  height: auto;
+  border: 2px solid #FAFAFF;
+  max-width: 100%;
+  border-radius: 10px;
+}
 .header .about {
   margin: 0 10%;
   color: white;
@@ -195,7 +208,7 @@ table {
 }
 .header svg {
   text-align: center;
-  margin-top: 25%;
+  margin-top: 17%;
 }
 .header .more {
   background: none;
