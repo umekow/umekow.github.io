@@ -1,8 +1,20 @@
 
 #navigation-container{
     border-bottom: 1px solid @main-color; 
+    background-color: @off-white;
     
 }
+
+.sticky{
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
+
 #navigation{
     display: flex;
     justify-content: space-between;

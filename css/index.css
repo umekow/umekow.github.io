@@ -128,6 +128,15 @@ table {
 }
 #navigation-container {
   border-bottom: 1px solid #9392c7;
+  background-color: #FAFAFF;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 #navigation {
   display: flex;
@@ -237,11 +246,11 @@ table {
   font-size: 2.5rem;
 }
 #skills .skills-container {
-  max-width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 75%;
 }
 #skills .skills-container .skill {
   background: #453A57;
@@ -261,20 +270,42 @@ table {
   background: #FAFAFF;
   color: #453A57;
 }
+#projects a {
+  color: #453A57;
+}
 #projects h3 {
   color: #453A57;
   text-align: center;
   font-size: 2.5rem;
 }
 #projects .projects-container {
-  max-width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 90%;
 }
 #projects .projects-container .project {
   max-width: 45%;
+  padding: 2.5%;
+}
+#projects .projects-container .project h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+#projects .projects-container .project .summary {
+  color: #453A57;
+  font-size: 1.2rem;
+}
+#projects .projects-container .project ul {
+  list-style-type: circle;
+}
+#projects .projects-container .project .stack {
+  margin: auto;
+  text-align: center;
+}
+#projects .projects-container .project .stack i {
+  padding: 1%;
 }
 .h3-style {
   color: #453A57;
@@ -282,7 +313,6 @@ table {
   font-size: 2.5rem;
 }
 .section-style {
-  max-width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;

@@ -2,17 +2,47 @@
 
     
 
-
+    a {
+        color: @dark-purple; 
+        
+    }
     h3{
         .h3-style();
+        
     }
     .projects-container{
         display: flex; 
         flex-wrap: wrap;
         .section-style(); 
+        max-width: 90%;
+        
+        
 
         .project{
             max-width: 45%; 
+            padding: 2.5%; 
+            h5{
+                font-size: 2rem; 
+                text-align: center;
+            }
+
+            .summary{
+                color: @dark-purple; 
+                font-size: 1.2rem; 
+            }
+
+            ul{
+                list-style-type: circle;
+            }
+            .stack{
+                
+                margin: auto; 
+                text-align:center;
+
+                i{
+                    padding: 1%; 
+                }
+            }
         }
     }
 }
