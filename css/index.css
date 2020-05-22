@@ -229,18 +229,15 @@ table {
   text-align: center;
   font-size: 2rem;
 }
-#skills .skill {
+#skills .skills-container .skill {
   background: #453A57;
   color: #FAFAFF;
 }
-#skills .skill:hover {
+#skills .skills-container .skill:hover {
   background: #FAFAFF;
   border: 1px solid #453A57;
   color: #453A57;
 }
-@font-face {
-  font-family: 'Consolas';
-  src: url('fonts\Consolas.woff2') format('woff2'), url('fonts\Consolas.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+body {
+  font-size: 62.5%;
 }
