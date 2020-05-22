@@ -229,6 +229,10 @@ table {
   text-align: center;
   font-size: 2rem;
 }
+#skills .skills-container {
+  max-width: 90%;
+  margin: auto;
+}
 #skills .skills-container .skill {
   background: #453A57;
   color: #FAFAFF;
