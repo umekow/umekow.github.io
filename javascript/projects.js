@@ -77,7 +77,7 @@ function createNewProject(project){
     title_link.appendChild(title); 
     title_container.appendChild(title_link); 
 
-    title_container.insertAdjacentHTML('beforeend', `<a href=${project.github}><i class="fab fa-github-square fa-2x"></i></a>`)
+    title_container.insertAdjacentHTML('beforeend', `<a href=${project.github}><i class="fab fa-github-square"></i></a>`)
 
     project_container.appendChild(title_container)
 
@@ -94,7 +94,7 @@ function createNewProject(project){
     stack_container.classList.add('stack'); 
     project_container.appendChild(stack_container); 
 
-    project.stack.forEach(skill => stack_container.insertAdjacentHTML('beforeend', `<i  class="${skills_list[skill]} fa-3x"></i>`)); 
+    project.stack.forEach(skill => stack_container.insertAdjacentHTML('beforeend', `<i  class="${skills_list[skill]}"></i>`)); 
 
     //project summary 
     const summary = document.createElement('p'); 
