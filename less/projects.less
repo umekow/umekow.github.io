@@ -19,27 +19,43 @@
         flex-wrap: wrap;
         .section-style(); 
         max-width: 90%;
+        margin-bottom: 10%; 
+
         
         
 
         .project{
             max-width: 45%; 
             padding: 2.5%; 
+            
+            @media (max-width: 700px){
+                max-width: 60%; 
+            }
+
+            @media (max-width: 500px){
+                max-width: 90%; 
+            }
 
             .title-container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                max-width: 60%;
+                max-width: 100%;
                 margin: auto;
-
+                font-size: 2rem; 
                 a{
                     padding: 0 3%; 
                 }
+
+                
             }
             h5{
-                font-size: 1.7rem; 
+                font-size: 1.5rem; 
                 text-align: center;
+
+                @media (max-width: 500px){
+
+                }
             }
 
             .summary{
@@ -58,6 +74,11 @@
                 i{
                     padding: 1%; 
                     color: @main-color; 
+                    font-size: 3rem; 
+
+                    @media (max-width: 610px){
+                        font-size: 2rem;
+                    }
                 }
             }
         }

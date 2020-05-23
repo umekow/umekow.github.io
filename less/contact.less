@@ -28,11 +28,18 @@
             max-width: 50%;
             width: 45%; 
 
+            @media (max-width: 600px){
+                max-width: 90%; 
+                width: 75%; 
+            }
+
             form{
                 display: flex;
                 flex-direction: column;
                 margin: 2% auto; 
                 border: 1px solid @dark-purple;
+
+
 
                 input{
                     margin: 1% 0; 

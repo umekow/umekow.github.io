@@ -195,7 +195,6 @@ table {
 .header .name-container {
   margin: auto;
   position: relative;
-  top: 5%;
 }
 .header .about-container {
   display: flex;
@@ -204,17 +203,38 @@ table {
   align-items: center;
   max-width: 80%;
 }
+@media (max-width: 700px) {
+  .header .about-container {
+    flex-direction: column;
+  }
+}
 .header .about-container img {
   height: auto;
   border: 2px solid #FAFAFF;
   max-width: 100%;
   border-radius: 10px;
 }
+@media (max-width: 700px) {
+  .header .about-container img {
+    border-radius: 100px;
+    width: 50%;
+  }
+}
 .header .about {
   margin: 0 10%;
   color: #FAFAFF;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2rem;
+}
+@media (max-width: 900px) {
+  .header .about {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .header .about {
+    font-size: 0.9rem;
+  }
 }
 .header .about .social {
   margin: 2% 0 0 0;
@@ -240,10 +260,14 @@ table {
   border: 1px solid #9392c7;
   color: #9392c7;
 }
+#skills {
+  background-color: #453A57;
+}
 #skills h3 {
   color: #453A57;
   text-align: center;
   font-size: 2.5rem;
+  color: #FAFAFF;
 }
 #skills .skills-container {
   margin: auto;
@@ -251,11 +275,13 @@ table {
   justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 75%;
+  padding: 5% 0;
 }
 #skills .skills-container .skill {
-  background: #453A57;
-  color: #FAFAFF;
-  min-width: 10%;
+  color: #453A57;
+  background: #FAFAFF;
+  min-width: 20%;
+  max-width: 25%;
   text-align: center;
   padding: 1%;
   margin: 3%;
@@ -266,9 +292,13 @@ table {
   justify-content: center;
   border: 1px solid #453A57;
 }
+#skills .skills-container .skill i {
+  margin: 0 5%;
+}
 #skills .skills-container .skill:hover {
-  background: #FAFAFF;
-  color: #453A57;
+  color: #FAFAFF;
+  background: #453A57;
+  border-color: #FAFAFF;
 }
 #projects a {
   color: #453A57;
@@ -287,23 +317,35 @@ table {
   justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 90%;
+  margin-bottom: 10%;
 }
 #projects .projects-container .project {
   max-width: 45%;
   padding: 2.5%;
 }
+@media (max-width: 700px) {
+  #projects .projects-container .project {
+    max-width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #projects .projects-container .project {
+    max-width: 90%;
+  }
+}
 #projects .projects-container .project .title-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
+  max-width: 100%;
   margin: auto;
+  font-size: 2rem;
 }
 #projects .projects-container .project .title-container a {
   padding: 0 3%;
 }
 #projects .projects-container .project h5 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 #projects .projects-container .project .summary {
@@ -320,6 +362,12 @@ table {
 #projects .projects-container .project .stack i {
   padding: 1%;
   color: #9392c7;
+  font-size: 3rem;
+}
+@media (max-width: 610px) {
+  #projects .projects-container .project .stack i {
+    font-size: 2rem;
+  }
 }
 #contact {
   background-color: #453A57;
@@ -348,6 +396,12 @@ table {
 #contact .contact-container .contact {
   max-width: 50%;
   width: 45%;
+}
+@media (max-width: 600px) {
+  #contact .contact-container .contact {
+    max-width: 90%;
+    width: 75%;
+  }
 }
 #contact .contact-container .contact form {
   display: flex;

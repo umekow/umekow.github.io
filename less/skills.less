@@ -1,17 +1,22 @@
 #skills{
+    background-color: @dark-purple;
+
     h3{
        .h3-style(); 
+       color: @off-white; 
     }
 
     .skills-container{
         .section-style(); 
         max-width: 75%;
+        padding: 5% 0; 
 
 
         .skill{
-            background: @dark-purple;
-            color: @off-white;
-            min-width: 10%;
+            color: @dark-purple;
+            background: @off-white;
+            min-width: 20%;
+            max-width: 25%; 
             text-align: center;
             padding: 1%;
             margin: 3%;
@@ -21,11 +26,16 @@
             align-items: center;
             justify-content: center;
             border: 1px solid @dark-purple;  
-    
+            
+            i{
+                margin: 0 5%; 
+            }
+            
     
             &:hover{
-                background:@off-white; 
-                color: @dark-purple; 
+                color:@off-white; 
+                background: @dark-purple; 
+                border-color: @off-white;
             }
         }
 
