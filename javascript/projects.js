@@ -48,7 +48,7 @@ const project_list = [
         'stack': [ 'Html', 'CSS', 'JavaScript', 'React', 'Node.js'], 
         'link': 'https://front-end-mlqg5zp0w.now.sh/', 
         'summary':'React application built to help users organize contact information for all donors to their organization\'s campaigns' , 
-        'bullets': ['solely responsible for developing the "about us" page, navigation, and header portion of the landing page', 'Held the role of senior front-end developer and collaborated with teams members to build front end'], 
+        'bullets': ['Solely responsible for developing the "about us" page, navigation, and header portion of the landing page', 'Held the role of senior front-end developer and collaborated with teams members to build front end'], 
     }, 
 
     {
