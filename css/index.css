@@ -261,7 +261,7 @@ table {
   color: #9392c7;
 }
 #skills {
-  background-color: #9392c7;
+  background-color: #453A57;
 }
 #skills h3 {
   color: #453A57;
@@ -280,7 +280,8 @@ table {
 #skills .skills-container .skill {
   color: #453A57;
   background: #FAFAFF;
-  min-width: 10%;
+  min-width: 20%;
+  max-width: 25%;
   text-align: center;
   padding: 1%;
   margin: 3%;
@@ -291,9 +292,13 @@ table {
   justify-content: center;
   border: 1px solid #453A57;
 }
+#skills .skills-container .skill i {
+  margin: 0 5%;
+}
 #skills .skills-container .skill:hover {
-  background: #FAFAFF;
-  color: #453A57;
+  color: #FAFAFF;
+  background: #453A57;
+  border-color: #FAFAFF;
 }
 #projects a {
   color: #453A57;
