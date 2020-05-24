@@ -27,7 +27,8 @@ const projects_section = document.querySelector('.projects-container');
 /*
 summary : one sentence
 responsiblities: 2 - 3 bullet points '
-
+data-aos="fade-up"
+     data-aos-anchor-placement="center-center"
 */
 
 const project_list = [
@@ -64,8 +65,28 @@ const project_list = [
 
 
 function createNewProject(project){
+    //create div that will act as a container for each project 
     const project_container = document.createElement('div'); 
     project_container.classList.add('project')
+
+    //aos attributes 
+    const aosData = document.createAttribute('data-aos'); 
+    const aosCenter = document.createAttribute('data-aos-anchor-placement'); 
+    const aosDuration = document.createAttribute('data-aos-duration'); 
+  
+
+    //set values of aos attributes 
+    aosData.value = "fade-up"; 
+    aosCenter.value = 'center-center'; 
+    aosDuration.value = '200'; 
+    
+
+    //add attribute to project_container
+    project_container.setAttributeNode(aosData); 
+    project_container.setAttributeNode(aosCenter); 
+    project_container.setAttributeNode(aosDuration); 
+    
+
 
     const title_container = document.createElement('div'); 
     title_container.classList.add('title-container')
