@@ -20,16 +20,8 @@ const skills_list = {
     'Postgres':'fas fa-database', 
 }
 
-
+//select div element that will contain projects 
 const projects_section = document.querySelector('.projects-container'); 
-
-
-/*
-summary : one sentence
-responsiblities: 2 - 3 bullet points '
-data-aos="fade-up"
-     data-aos-anchor-placement="center-center"
-*/
 
 const project_list = [
     {
@@ -69,22 +61,22 @@ function createNewProject(project){
     const project_container = document.createElement('div'); 
     project_container.classList.add('project')
 
-    //aos attributes 
-    const aosData = document.createAttribute('data-aos'); 
-    const aosCenter = document.createAttribute('data-aos-anchor-placement'); 
-    const aosDuration = document.createAttribute('data-aos-duration'); 
+    // //aos attributes 
+    // const aosData = document.createAttribute('data-aos'); 
+    // const aosCenter = document.createAttribute('data-aos-anchor-placement'); 
+    // const aosDuration = document.createAttribute('data-aos-duration'); 
   
 
-    //set values of aos attributes 
-    aosData.value = "fade-up"; 
-    aosCenter.value = 'center-center'; 
-    aosDuration.value = '200'; 
+    // //set values of aos attributes 
+    // aosData.value = "fade-up"; 
+    // aosCenter.value = 'center-center'; 
+    // aosDuration.value = '200'; 
     
 
-    //add attribute to project_container
-    project_container.setAttributeNode(aosData); 
-    project_container.setAttributeNode(aosCenter); 
-    project_container.setAttributeNode(aosDuration); 
+    // //add attribute to project_container
+    // project_container.setAttributeNode(aosData); 
+    // project_container.setAttributeNode(aosCenter); 
+    // project_container.setAttributeNode(aosDuration); 
     
 
 
@@ -110,11 +102,10 @@ function createNewProject(project){
     project_container.appendChild(img); 
 
     //tech stack
-
     const stack_container = document.createElement('div'); 
     stack_container.classList.add('stack'); 
     project_container.appendChild(stack_container); 
-
+    //creates an icon for every skill
     project.stack.forEach(skill => stack_container.insertAdjacentHTML('beforeend', `<i  class="${skills_list[skill]}"></i>`)); 
 
     //project summary 
@@ -132,12 +123,8 @@ function createNewProject(project){
     }); 
     project_container.appendChild(bullet_points); 
 
-
-
-
-
     return project_container
 }
 
 
-project_list.forEach(project => projects_section.appendChild(createNewProject(project)))
+project_list.forEach(project => projects_section.appendChild(createNewProject(project))); 
